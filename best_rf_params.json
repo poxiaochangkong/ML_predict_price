@@ -2,76 +2,76 @@
   "best_accuracy_params": {
     "class_weight": "balanced",
     "criterion": "gini",
-    "max_depth": 8,
+    "max_depth": 3,
     "max_features": 0.7,
-    "min_samples_leaf": 17,
-    "min_samples_split": 50,
-    "n_estimators": 50
+    "min_samples_leaf": 20,
+    "min_samples_split": 45,
+    "n_estimators": 75
   },
-  "best_accuracy": 0.5707547169811321,
+  "best_accuracy": 0.5542452830188679,
   "best_f1_params": {
     "class_weight": "balanced",
     "criterion": "gini",
-    "max_depth": 8,
+    "max_depth": 5,
     "max_features": 0.7,
     "min_samples_leaf": 17,
-    "min_samples_split": 45,
+    "min_samples_split": 55,
     "n_estimators": 50
   },
-  "best_f1_score": 0.5531458605872893,
+  "best_f1_score": 0.544131281689444,
   "final_selected_params": {
     "class_weight": "balanced",
     "criterion": "gini",
-    "max_depth": 8,
+    "max_depth": 5,
     "max_features": 0.7,
     "min_samples_leaf": 17,
-    "min_samples_split": 45,
+    "min_samples_split": 55,
     "n_estimators": 50
   },
-  "final_accuracy": 0.5613207547169812,
-  "final_f1_score": 0.5531458605872893,
-  "stability_mean": 0.5386792452830189,
-  "stability_std": 0.016915491582114257,
+  "final_accuracy": 0.5518867924528302,
+  "final_f1_score": 0.544131281689444,
+  "stability_mean": 0.5358490566037736,
+  "stability_std": 0.01277945017372082,
   "top_features": [
     {
       "feature": "price_change_1",
-      "importance": 0.1291255115051347
+      "importance": 0.15462338151300242
     },
     {
       "feature": "price_ma5_ratio",
-      "importance": 0.11236974036427015
-    },
-    {
-      "feature": "ma5_ma20_ratio",
-      "importance": 0.0946140481628083
+      "importance": 0.13238782837926608
     },
     {
       "feature": "ma_60",
-      "importance": 0.07629805953815454
+      "importance": 0.12389832284416222
+    },
+    {
+      "feature": "ma5_ma20_ratio",
+      "importance": 0.09900698709139387
     },
     {
       "feature": "momentum_10",
-      "importance": 0.07387715763180698
-    },
-    {
-      "feature": "price_ma60_ratio",
-      "importance": 0.07265328363943614
+      "importance": 0.08217535543385153
     },
     {
       "feature": "price_ma20_ratio",
-      "importance": 0.06921056794339703
+      "importance": 0.07915880908158252
     },
     {
-      "feature": "position_in_20day_range",
-      "importance": 0.06784528043027875
+      "feature": "price_ma60_ratio",
+      "importance": 0.051390782486370294
     },
     {
-      "feature": "volatility_20",
-      "importance": 0.05884998433343292
+      "feature": "close_lag1",
+      "importance": 0.04975712696284869
     },
     {
-      "feature": "momentum_5",
-      "importance": 0.048730343555949955
+      "feature": "ma_20",
+      "importance": 0.04340739368792337
+    },
+    {
+      "feature": "day_of_week",
+      "importance": 0.04090594285565346
     }
   ]
 }
