@@ -1,62 +1,62 @@
 {
     "model_name": "RandomForest_5min_Vol_Enhanced",
     "best_params": {
-        "class_weight": null,
-        "max_depth": 7,
-        "min_samples_leaf": 10,
-        "n_estimators": 200
+        "class_weight": "balanced",
+        "max_depth": 3,
+        "min_samples_leaf": 50,
+        "n_estimators": 50
     },
-    "best_cv_score": 0.6094195461284069,
-    "val_accuracy": 0.6120541838134431,
+    "best_cv_score": 0.5571901014938989,
+    "val_accuracy": 0.579818244170096,
     "feature_importances": [
         {
             "feature": "volume",
-            "importance": 0.3005056289901128
-        },
-        {
-            "feature": "ma_20",
-            "importance": 0.14568087498808358
+            "importance": 0.36070004376881853
         },
         {
             "feature": "ma_5",
-            "importance": 0.14279503516909245
+            "importance": 0.1801903806415493
+        },
+        {
+            "feature": "ma_20",
+            "importance": 0.1713588484262596
         },
         {
             "feature": "hour",
-            "importance": 0.13505166531577278
+            "importance": 0.13772297846116774
         },
         {
             "feature": "momentum_5",
-            "importance": 0.11697600740862253
-        },
-        {
-            "feature": "vol_ratio",
-            "importance": 0.060086472096659425
-        },
-        {
-            "feature": "vol_change",
-            "importance": 0.05225169008198962
+            "importance": 0.1113792495058648
         },
         {
             "feature": "minute",
-            "importance": 0.046652625949666786
+            "importance": 0.015573016655469096
+        },
+        {
+            "feature": "vol_change",
+            "importance": 0.011863280172469626
+        },
+        {
+            "feature": "vol_ratio",
+            "importance": 0.01121220236840136
         }
     ],
     "confusion_matrix": [
         [
-            22,
-            2151,
-            43
+            351,
+            1583,
+            282
         ],
         [
-            13,
-            7059,
-            34
+            663,
+            6142,
+            301
         ],
         [
-            24,
-            2260,
-            58
+            417,
+            1655,
+            270
         ]
     ]
 }

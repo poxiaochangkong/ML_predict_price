@@ -1,6 +1,6 @@
 使用到的库
   
-akshare numpy pandas scikit-learn json warnings
+baostock numpy pandas scikit-learn json warnings
 
 解释器版本 3.13.11
 
