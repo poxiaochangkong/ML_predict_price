@@ -1,0 +1,77 @@
+{
+  "best_accuracy_params": {
+    "class_weight": "balanced",
+    "criterion": "gini",
+    "max_depth": 8,
+    "max_features": 0.7,
+    "min_samples_leaf": 17,
+    "min_samples_split": 50,
+    "n_estimators": 50
+  },
+  "best_accuracy": 0.5707547169811321,
+  "best_f1_params": {
+    "class_weight": "balanced",
+    "criterion": "gini",
+    "max_depth": 8,
+    "max_features": 0.7,
+    "min_samples_leaf": 17,
+    "min_samples_split": 45,
+    "n_estimators": 50
+  },
+  "best_f1_score": 0.5531458605872893,
+  "final_selected_params": {
+    "class_weight": "balanced",
+    "criterion": "gini",
+    "max_depth": 8,
+    "max_features": 0.7,
+    "min_samples_leaf": 17,
+    "min_samples_split": 45,
+    "n_estimators": 50
+  },
+  "final_accuracy": 0.5613207547169812,
+  "final_f1_score": 0.5531458605872893,
+  "stability_mean": 0.5386792452830189,
+  "stability_std": 0.016915491582114257,
+  "top_features": [
+    {
+      "feature": "price_change_1",
+      "importance": 0.1291255115051347
+    },
+    {
+      "feature": "price_ma5_ratio",
+      "importance": 0.11236974036427015
+    },
+    {
+      "feature": "ma5_ma20_ratio",
+      "importance": 0.0946140481628083
+    },
+    {
+      "feature": "ma_60",
+      "importance": 0.07629805953815454
+    },
+    {
+      "feature": "momentum_10",
+      "importance": 0.07387715763180698
+    },
+    {
+      "feature": "price_ma60_ratio",
+      "importance": 0.07265328363943614
+    },
+    {
+      "feature": "price_ma20_ratio",
+      "importance": 0.06921056794339703
+    },
+    {
+      "feature": "position_in_20day_range",
+      "importance": 0.06784528043027875
+    },
+    {
+      "feature": "volatility_20",
+      "importance": 0.05884998433343292
+    },
+    {
+      "feature": "momentum_5",
+      "importance": 0.048730343555949955
+    }
+  ]
+}
