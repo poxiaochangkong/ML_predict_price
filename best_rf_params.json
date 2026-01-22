@@ -1,86 +1,62 @@
 {
-  "best_accuracy_params": {
-    "class_weight": {
-      "0": 2,
-      "1": 1
+    "model_name": "RandomForest_5min_Vol_Enhanced",
+    "best_params": {
+        "class_weight": null,
+        "max_depth": 7,
+        "min_samples_leaf": 10,
+        "n_estimators": 200
     },
-    "criterion": "gini",
-    "max_depth": 5,
-    "max_features": "sqrt",
-    "min_samples_leaf": 4,
-    "min_samples_split": 15,
-    "n_estimators": 75
-  },
-  "best_accuracy": 0.5047169811320755,
-  "best_f1_params": {
-    "class_weight": {
-      "0": 2,
-      "1": 1
-    },
-    "criterion": "gini",
-    "max_depth": 5,
-    "max_features": "sqrt",
-    "min_samples_leaf": 4,
-    "min_samples_split": 15,
-    "n_estimators": 75
-  },
-  "best_f1_score": 0.3718378756114605,
-  "final_selected_params": {
-    "class_weight": {
-      "0": 2,
-      "1": 1
-    },
-    "criterion": "gini",
-    "max_depth": 5,
-    "max_features": "sqrt",
-    "min_samples_leaf": 4,
-    "min_samples_split": 15,
-    "n_estimators": 75
-  },
-  "final_accuracy": 0.5047169811320755,
-  "final_f1_score": 0.3718378756114605,
-  "stability_mean": 0.4966981132075471,
-  "stability_std": 0.004374348346931963,
-  "top_features": [
-    {
-      "feature": "volatility_20",
-      "importance": 0.10672953261071003
-    },
-    {
-      "feature": "price_ma20_ratio",
-      "importance": 0.10051878602641702
-    },
-    {
-      "feature": "momentum_10",
-      "importance": 0.09352941952442684
-    },
-    {
-      "feature": "price_ma60_ratio",
-      "importance": 0.08765746701157859
-    },
-    {
-      "feature": "ma_60",
-      "importance": 0.0731696637913589
-    },
-    {
-      "feature": "price_change_5",
-      "importance": 0.06878076356305945
-    },
-    {
-      "feature": "price_ma5_ratio",
-      "importance": 0.06275837271636935
-    },
-    {
-      "feature": "close_lag1",
-      "importance": 0.060110994028319875
-    },
-    {
-      "feature": "ma5_ma20_ratio",
-      "importance": 0.059827543633076956
-    },
-    {
-      "feature": "ma_20",
-      "importance": 0.05889204873974953
-    }
-  ]
+    "best_cv_score": 0.6094195461284069,
+    "val_accuracy": 0.6120541838134431,
+    "feature_importances": [
+        {
+            "feature": "volume",
+            "importance": 0.3005056289901128
+        },
+        {
+            "feature": "ma_20",
+            "importance": 0.14568087498808358
+        },
+        {
+            "feature": "ma_5",
+            "importance": 0.14279503516909245
+        },
+        {
+            "feature": "hour",
+            "importance": 0.13505166531577278
+        },
+        {
+            "feature": "momentum_5",
+            "importance": 0.11697600740862253
+        },
+        {
+            "feature": "vol_ratio",
+            "importance": 0.060086472096659425
+        },
+        {
+            "feature": "vol_change",
+            "importance": 0.05225169008198962
+        },
+        {
+            "feature": "minute",
+            "importance": 0.046652625949666786
+        }
+    ],
+    "confusion_matrix": [
+        [
+            22,
+            2151,
+            43
+        ],
+        [
+            13,
+            7059,
+            34
+        ],
+        [
+            24,
+            2260,
+            58
+        ]
+    ]
 }
